@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>新闻详情</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ext/city-picker.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ext/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/weui.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+
+<div class="page-news-detail page">
+	<!--头部-->
+	<header>
+		<!--logo-->
+		<div class="logo">
+			<img src="img/logo.png"/>
+			安徽鑫晟辉互联网科技有限公司
+		</div>
+		<!--导航菜单按钮-->
+		<div class="nav-menu">
+			<img src="img/nav.png"/>
+		</div>
+	</header>
+	
+	<div class="main">
+	
+		<!--banner图-->
+		<div class="banner">
+			<!--轮播图-->
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<img src="img/about-banner.jpg"/>
+			        </div>
+			    </div>
+			</div>		
+		</div>
+		
+		<!--新闻动态-->
+		<div class="news-active-detail">
+			<h2>微软Surface家族今晚或将添新丁</h2>
+			<span class="time">2017.5.2</span>
+			<div class="detail-text">
+				      新浪数码讯5月2日上午消息，北京时间今晚8时微软公司将举行#MicrosoftEDU会议，据外媒消息称，今晚可能将发布一款名为Surface Laptop的笔记本产品，搭载特殊版的Windows 10 S系统。<br /><br />
+　　
+      Surface新品图<br /><br />
+
+　　新品将有4色可选<br /><br />
+
+　　距本次发布会的开始已经不足24小时，随着#MicrosoftEDU主题标签和大量关于微软计划在教育市场与Google合作的消息放出，本次发布会与教育的关系必定密不可分，可能发布面向教育市场的笔记本产品。而目前著名网友放出几张13.5英寸笔记本的图片，从图片上看该笔记本运行Windows 10 S系统，据称是经过云优化版本的Windows 10系统，只能从应用商店下载应用程序。具有PixelSense显示屏，分辨率达到3.4百万级，最薄处仅有9.9毫米，将有4种颜色可选，并配有一个Alcantara材质的键盘，这个材质在Surface Pro 4上已经有过。有趣的是，这款产品只有几个端口，或许大多数情况下都在“云”上运行。(曾诚)
+<br /><br />
+
+      键盘材质很特别<br /><br />
+
+　   背面设计与Surface设计语言一致<br />
+			</div>
+		</div>
+	
+	</div>
+
+	<!--底部-->
+	<footer>
+		<!--Copyright-->
+		<p class="copyright">
+			<span>Copyright © 2017 www.ahlewei.com 鑫晟辉  版权所有</span>
+			<a href="">皖ICP备14009301号</a>
+		</p>
+	</footer>
+  
+</div>
+
+<!--导航弹层-->
+<div class="mask">
+	<div class="nav-menu">
+		<div class="logo">
+			<img src="img/logo.png"/>
+			<p>安徽鑫晟辉互联网科技有限公司</p>
+		</div>
+		
+		<div class="nav-item">
+			<ul>
+				<li><a class="on" href="">首页</a></li>
+				<li><a href="">关于我们</a></li>
+				<li><a href="">鑫晟辉商城</a></li>
+				<li><a href="">新闻动态</a></li>
+				<li><a href="">三级分销</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="close"></div>
+</div>
+	
+<script type="text/javascript">
+	$(function (){
+		//导航弹层
+		$('.nav-menu').click(function(){
+			$('.mask').animate({'left':0},300);
+		});
+		
+		$(".close").click(function(){
+			$('.mask').animate({"left":"100%"},300);
+		});
+		
+	})
+</script>	
+	
+</body>
+</html>

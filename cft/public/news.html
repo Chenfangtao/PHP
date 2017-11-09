@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>新闻动态</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<script src="js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ext/city-picker.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ext/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/weui.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+
+<div class="page-news page">
+	<!--头部-->
+	<header>
+		<!--logo-->
+		<div class="logo">
+			<img src="img/logo.png"/>
+			安徽鑫晟辉互联网科技有限公司
+		</div>
+		<!--导航菜单按钮-->
+		<div class="nav-menu">
+			<img src="img/nav.png"/>
+		</div>
+	</header>
+	
+	<div class="main">
+	
+		<!--banner图-->
+		<div class="banner">
+			<!--轮播图-->
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<img src="img/news-banner.jpg"/>
+			        </div>
+			    </div>
+			</div>		
+		</div>
+		
+		<!--新闻动态-->
+		<div class="news-active">
+			<!--标题-->
+			<div class="public-title rtv">
+				新闻动态
+				<span></span>
+			</div>
+			
+			<!--动态列表-->
+			<div class="active-list">
+				<ul>
+					<li>
+						<a href="">
+							<div class="pic">
+								<img src="img/11.jpg" alt="" />
+							</div>
+							<div class="right-text">
+								<h3>微软Surface家族今晚或将添新丁</h3>
+								<p>距本次发布会的开始已经不足24小时，随着MicrosoftEDU主题标签标签标签标签标签</p>
+								<span class="time">2017.5.2</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="pic">
+								<img src="img/11.jpg" alt="" />
+							</div>
+							<div class="right-text">
+								<h3>微软Surface家族今晚或将添新丁</h3>
+								<p>距本次发布会的开始已经不足24小时，随着MicrosoftEDU主题标签标签标签标签标签</p>
+								<span class="time">2017.5.2</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="pic">
+								<img src="img/11.jpg" alt="" />
+							</div>
+							<div class="right-text">
+								<h3>微软Surface家族今晚或将添新丁</h3>
+								<p>距本次发布会的开始已经不足24小时，随着MicrosoftEDU主题标签标签标签标签标签</p>
+								<span class="time">2017.5.2</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<!--上拉刷新-->
+			<div class="renovate">
+				上拉查看更多
+			</div>
+			
+		</div>
+	
+	</div>
+
+	<!--底部-->
+	<footer>
+		<!--Copyright-->
+		<p class="copyright">
+			<span>Copyright © 2017 www.ahlewei.com 鑫晟辉  版权所有</span>
+			<a href="">皖ICP备14009301号</a>
+		</p>
+	</footer>
+  
+</div>
+
+<!--导航弹层-->
+<div class="mask">
+	<div class="nav-menu">
+		<div class="logo">
+			<img src="img/logo.png"/>
+			<p>安徽鑫晟辉互联网科技有限公司</p>
+		</div>
+		
+		<div class="nav-item">
+			<ul>
+				<li><a class="on" href="">首页</a></li>
+				<li><a href="">关于我们</a></li>
+				<li><a href="">鑫晟辉商城</a></li>
+				<li><a href="">新闻动态</a></li>
+				<li><a href="">三级分销</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="close"></div>
+</div>
+	
+<script type="text/javascript">
+	$(function (){
+		//导航弹层
+		$('.nav-menu').click(function(){
+			$('.mask').animate({'left':0},300);
+		});
+		
+		$(".close").click(function(){
+			$('.mask').animate({"left":"100%"},300);
+		});
+		
+		//动态列表达到3条或以上显示下拉提示
+		var news_list = $('.active-list li').length;
+		if(news_list >= 3){
+			$('.renovate').css('display','block');
+		}
+		
+	})
+</script>	
+	
+</body>
+</html>
